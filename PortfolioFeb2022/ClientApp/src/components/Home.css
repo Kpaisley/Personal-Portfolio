@@ -1,0 +1,99 @@
+﻿
+
+.title {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 25px;
+    justify-content: flex-end;
+    
+}
+
+.title h1, h3 {
+    padding: 25px 0 25px 0;
+    
+}
+
+
+.name {
+    margin-right: auto;
+}
+
+.icons {
+    margin-bottom: auto;
+    margin-top: auto;
+    padding: 50px;
+}
+
+.icons span {
+    padding: 30px;
+    cursor: pointer;
+}
+
+
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0 25px 0;
+    font-size: 3em;
+    text-align: center;
+}
+
+
+.qualities {
+    text-align: center;
+}
+
+
+.qualities span {
+    display: inline-block;
+    padding: 100px;
+    text-align: center;
+}
+
+
+.center {
+    text-align: center;
+}
+
+.button {
+    background-color: midnightblue;
+    border-radius: 10px;
+    color: white;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.button:hover {
+    text-decoration: underline;
+    font-size: 1.03em;
+}
+
+strong {
+    font-size: 1.1em;
+}
+
+
+
+@media screen and (max-width: 991px) {
+    .title {
+        justify-content: center;
+    }
+
+    .name {
+        margin: 0px;
+        text-align: center
+    }
+
+    .icons span {
+        padding: 8px;
+    }
+
+    .intro {
+        padding: 50px 0 25px 0;
+    }
+
+    .qualities span {
+        padding: 50px;
+    }
+}
