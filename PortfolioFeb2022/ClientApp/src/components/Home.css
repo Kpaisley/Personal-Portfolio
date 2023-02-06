@@ -13,15 +13,10 @@
     
 }
 
-
-.name {
-    margin-right: auto;
-}
-
 .icons {
-    margin-bottom: auto;
-    margin-top: auto;
+    margin: auto 0 auto auto;
     padding: 50px;
+
 }
 
 .icons span {
@@ -78,11 +73,11 @@ strong {
 @media screen and (max-width: 991px) {
     .title {
         justify-content: center;
+        text-align: center;
     }
 
-    .name {
-        margin: 0px;
-        text-align: center
+    .icons {
+        margin: auto 0 auto 0;
     }
 
     .icons span {

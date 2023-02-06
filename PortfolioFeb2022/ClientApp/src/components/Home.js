@@ -13,7 +13,7 @@ export class Home extends Component {
     return (
       <div>
             <div className="title">
-                <div className="name">
+                <div>
                     <h1>KYLE PAISLEY</h1>
                     <h3>FULL STACK WEB DEVELOPER</h3>
                 </div>
