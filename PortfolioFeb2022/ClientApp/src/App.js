@@ -10,7 +10,7 @@ export default class App extends Component {
 
 
     goToAbout() {
-        document.getElementById('about-me').scrollIntoView();
+        document.getElementById('about-page').scrollIntoView();
     }
 
   render() {

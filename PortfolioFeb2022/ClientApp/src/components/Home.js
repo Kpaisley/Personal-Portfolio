@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { FaLinkedin, FaGithubSquare, FaEnvelope } from 'react-icons/fa';
+import { FaLinkedin, FaGithubSquare, FaEnvelope, } from 'react-icons/fa';
 import './Home.css';
 
 export class Home extends Component {
@@ -11,14 +11,14 @@ export class Home extends Component {
 
   render() {
     return (
-      <div>
+      <div id="home-page">
             <div className="title">
                 <div>
                     <h1>KYLE PAISLEY</h1>
                     <h3>FULL STACK WEB DEVELOPER</h3>
                 </div>
                 <div className="icons">
-                    <span><a href="https://www.linkedin.com/in/kyle-w-paisley/" target="_blank"><FaLinkedin size="4em" color="midnightblue" /></a></span>
+                    <span><a href="https://www.linkedin.com/in/kyle-w-paisley/" target="_blank"><FaLinkedin size="4em" color="midnightblue"  /></a></span>
                     <span><a href="https://github.com/Kpaisley" target="_blank"><FaGithubSquare size="4em" color="midnightblue" /></a></span>
                     <span><FaEnvelope size="4em" color="midnightblue" /></span>
                 </div>
@@ -27,7 +27,7 @@ export class Home extends Component {
             </div>
             <hr />
             <div className="intro">
-                <span>I am passionate about developing quality software with modern technology</span>
+                <span className="fade-in">I am passionate about developing quality software with modern technology</span>
             </div>
             <div className="qualities">
                 <span>

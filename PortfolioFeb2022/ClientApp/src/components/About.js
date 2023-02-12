@@ -6,8 +6,9 @@ export class About extends Component {
     render() {
         return (
             <div>
-                <div id="about-me">
-                    <p>About Me!</p>
+                <div id="about-page">
+                    <div className="about-section">About Me!</div>
+                    
                 </div>
             </div>
         );

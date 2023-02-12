@@ -1,22 +1,33 @@
 ﻿
 
+
+
+#home-page {
+    padding: 0 0 50px 0;
+}
+
 .title {
     display: flex;
     flex-wrap: wrap;
     padding-top: 25px;
     justify-content: flex-end;
-    
 }
 
 .title h1, h3 {
     padding: 25px 0 25px 0;
-    
+}
+
+.title h1{
+    font-size: 3em;
+}
+
+.title h3{
+    font-size: 2em;
 }
 
 .icons {
     margin: auto 0 auto auto;
     padding: 50px;
-
 }
 
 .icons span {
@@ -24,13 +35,11 @@
     cursor: pointer;
 }
 
-
-
 .intro {
     display: flex;
     flex-direction: column;
     padding: 100px 0 25px 0;
-    font-size: 3em;
+    font-size: 2.5em;
     text-align: center;
 }
 
@@ -61,12 +70,14 @@
 
 .button:hover {
     text-decoration: underline;
-    font-size: 1.03em;
+    font-weight: bold;
 }
 
 strong {
     font-size: 1.1em;
 }
+
+
 
 
 
