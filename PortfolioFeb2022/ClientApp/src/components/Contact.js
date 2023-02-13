@@ -5,15 +5,59 @@ import bootstrap from "bootstrap/dist/css/bootstrap.min.css";
 export class Contact extends Component {
 
 
+    sendEmail = (event) => {
+        event.preventDefault();
+        const message = document.getElementById('submit-msg');
+        var object = {};
+
+
+
+        for (let i = 0; i < event.target.length - 1; i++) {
+
+            object[event.target[i].name] = event.target[i].value;
+            event.target[i].value = "";
+        }
+        var json = JSON.stringify(object);
+        message.innerHTML = "Sending message...";
+
+        fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json"
+            },
+            body: json
+        })
+            .then(async (response) => {
+                let json = await response.json();
+                if (response.status == 200) {
+                    message.innerHTML = json.message;
+                } else {
+                    message.innerHTML = "Something went wrong...";
+                }
+            });
+            
+        
+        
+        
+        
+
+    }
+
+
+
+
+
     render() {
         return (
             <div id="contact-page" className="form-bg">
                 <div className="contact-form">
                     <h2>Contact Me</h2>
                     <h5>Fill out the form below to send me a message</h5>
-                    <form onSubmit={this.props.sendEmail}>
+                    <form onSubmit={this.sendEmail} id="contact-form">
                         <input type="hidden" name="access_key" value="da51d208-f7bc-40e1-b664-cffbcc86686f"></input>
                         <input type="hidden" name="subject" value="New Personal Portfolio Submission"></input>
+                        {/*<input type="hidden" name="redirect" value="https://localhost:44427/"></input>*/}
                         <label className="label" htmlFor="name">
                             Name:
                             <input type="text" name="name" className="input" required></input>
