@@ -18,16 +18,16 @@ export class Home extends Component {
                     <h3>FULL STACK WEB DEVELOPER</h3>
                 </div>
                 <div className="icons">
-                    <span><a href="https://www.linkedin.com/in/kyle-w-paisley/" target="_blank"><FaLinkedin size="4em" color="midnightblue"  /></a></span>
-                    <span><a href="https://github.com/Kpaisley" target="_blank"><FaGithubSquare size="4em" color="midnightblue" /></a></span>
-                    <span><FaEnvelope size="4em" color="midnightblue" /></span>
+                    <span><a href="https://www.linkedin.com/in/kyle-w-paisley/" target="_blank"><FaLinkedin size="4em" color="#03034f"  /></a></span>
+                    <span><a href="https://github.com/Kpaisley" target="_blank"><FaGithubSquare size="4em" color="#03034f" /></a></span>
+                    <span><FaEnvelope size="4em" color="#03034f" /></span>
                 </div>
                 
                 
             </div>
             <hr />
             <div className="intro">
-                <span className="fade-in">I am passionate about developing quality software with modern technology</span>
+                <span className="fade-in">"I am passionate about developing quality software with modern technology."</span>
             </div>
             <div className="qualities">
                 <span>
@@ -49,9 +49,7 @@ export class Home extends Component {
                     <strong>Problem Solving</strong>
                 </span>
             </div>
-            <div className="center">
-                <span className="button" onClick={() => this.props.goToAbout()}>Learn More!</span>
-            </div>
+            
       </div>
     );
   }

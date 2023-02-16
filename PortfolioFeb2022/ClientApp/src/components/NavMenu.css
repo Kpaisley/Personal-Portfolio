@@ -18,9 +18,32 @@ html {
 }
 
 header {
-    background: linear-gradient(15deg, #00003b, #00003a, #000036, #010031, #00002c, #000029, #000027);
+    /*background: linear-gradient(15deg, #00003b, #00003a, #000036, #010031, #00002c, #000029, #000027);*/
+    background: linear-gradient(90deg, rgba(17,24,39,1) 2%, rgba(0,0,58,1) 50%, rgba(17,24,39,1) 98%);
     min-height: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 6;
+    transition: opacity 0.5s linear; /*FADES IN NAVBAR WHEN SCROLLING UP*/
 }
+
+.scroll-down-fade {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 0.5s, opacity 0.5s linear; 
+}
+
+.btn-fade-in {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s 0.5s, opacity 0.5s linear;
+}
+
+
+
+
 
 
 .nav-text {
@@ -28,8 +51,55 @@ header {
     cursor: pointer;
 }
 
-    .nav-text:hover {
-        text-decoration: underline;
-        font-size: 1.25em;
+.nav-text:hover {
+    text-decoration: underline;
+    font-size: 1.25em;
+}
+
+
+#to-top-btn {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 0 50px 75px 0;
+    color: white;
+    background-color: #1f2937;
+    border: 2px solid #fcfcfc;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    font-size: 3em;
+    padding: 10px 35px;
+    border-radius: 60px;
+    cursor: pointer;
+    z-index: 6;
+    transition: opacity 0.5s linear;
+}
+
+#to-top-btn:hover {
+    padding: 11px 36px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+
+.opacity-hidden {
+    opacity: 0;
+    transition: opacity 0.5s linear;
+}
+
+.visibility-none {
+    visibility: hidden;
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    #to-top-btn {
+        padding: 7px 20px;
+        font-size: 2em;
+        margin: 0 25px 50px 0;
     }
+
+    
+
+}
+
 

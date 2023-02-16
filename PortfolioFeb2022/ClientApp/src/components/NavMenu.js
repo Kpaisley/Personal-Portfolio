@@ -15,17 +15,46 @@ export class NavMenu extends Component {
     };
   }
 
+    componentDidMount() {
+        //NAVBAR FADE-OUT WHEN SCROLLING DOWN
+        window.addEventListener('scroll', () => {
+
+            const homeTop = document.getElementById('home-page').getBoundingClientRect().top;
+
+            homeTop >= -300
+                ? document.getElementById('navbar').classList.remove('scroll-down-fade')
+                : document.getElementById('navbar').classList.add('scroll-down-fade');
+
+           
+
+
+            document.getElementById('navbar').classList.contains('scroll-down-fade')
+                ? document.getElementById('to-top-btn').classList.remove('opacity-hidden')
+                : document.getElementById('to-top-btn').classList.add('opacity-hidden')
+
+            //MAKES BUTTON VISIBILITY:HIDDEN WHEN IT FADES AWAY SO IT CANNOT BE CLICKED.
+            document.getElementById('to-top-btn').classList.contains('opacity-hidden')
+                ? document.getElementById('to-top-btn').classList.add('visibility-none')
+                : document.getElementById('to-top-btn').classList.remove('visibility-none');
+                
+                
+        })
+    }
+
   toggleNavbar () {
     this.setState({
       collapsed: !this.state.collapsed
     });
     }
 
+
+    
     
 
   render() {
-    return (
-      <header>
+      return (
+        <div>
+        <header id="navbar">
         <Navbar className="navbar-expand-sm navbar-toggleable-sm ng-white box-shadow mb-3" container dark>
           <NavbarBrand tag={Link} to="/"><img src="../Kp-Icon-White.png" height='100px'></img></NavbarBrand>
           <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
@@ -36,6 +65,9 @@ export class NavMenu extends Component {
               </NavItem>
               <NavItem>
                 <NavLink className="text-light nav-text" onClick={() => this.props.goToAbout()}>About</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink className="text-light nav-text" onClick={() => this.props.goToContact()}>Contact</NavLink>
               </NavItem>
               {/*<NavItem>*/}
               {/*  <NavLink tag={Link} className="text-light nav-text" to="/counter">Counter</NavLink>*/}
@@ -49,7 +81,9 @@ export class NavMenu extends Component {
             </ul>
           </Collapse>
         </Navbar>
-      </header>
+        </header>
+              <span id="to-top-btn" className="opacity-hidden visibility-none" onClick={() => this.props.goToHome()}>^</span>
+        </div>
     );
   }
 }

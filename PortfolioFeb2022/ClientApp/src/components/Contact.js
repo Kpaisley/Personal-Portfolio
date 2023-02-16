@@ -10,12 +10,10 @@ export class Contact extends Component {
         const message = document.getElementById('submit-msg');
         var object = {};
 
-
-
         for (let i = 0; i < event.target.length - 1; i++) {
 
             object[event.target[i].name] = event.target[i].value;
-            event.target[i].value = "";
+            event.target[i].value = ""; //RESET VALUE IN FORM INPUT FIELDS
         }
         var json = JSON.stringify(object);
         message.innerHTML = "Sending message...";
@@ -36,13 +34,10 @@ export class Contact extends Component {
                     message.innerHTML = "Something went wrong...";
                 }
             });
-            
-        
-        
-        
-        
-
     }
+
+
+    
 
 
 
@@ -57,7 +52,6 @@ export class Contact extends Component {
                     <form onSubmit={this.sendEmail} id="contact-form">
                         <input type="hidden" name="access_key" value="da51d208-f7bc-40e1-b664-cffbcc86686f"></input>
                         <input type="hidden" name="subject" value="New Personal Portfolio Submission"></input>
-                        {/*<input type="hidden" name="redirect" value="https://localhost:44427/"></input>*/}
                         <label className="label" htmlFor="name">
                             Name:
                             <input type="text" name="name" className="input" required></input>

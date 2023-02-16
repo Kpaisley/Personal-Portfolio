@@ -5,10 +5,13 @@ import { NavMenu } from './NavMenu';
 export class Layout extends Component {
   static displayName = Layout.name;
 
+    
+
+
   render() {
     return (
       <div>
-        <NavMenu goToAbout={() => this.props.goToAbout()} />
+            <NavMenu goToHome={() => this.props.goToHome()} goToAbout={() => this.props.goToAbout()} goToContact={() => this.props.goToContact()} />
         <Container tag="main">
           {this.props.children}
         </Container>

@@ -9,13 +9,21 @@ export default class App extends Component {
     static displayName = App.name;
 
 
+    goToHome() {
+        document.getElementById('home-page').scrollIntoView();
+    }
+
     goToAbout() {
         document.getElementById('about-page').scrollIntoView();
     }
 
+    goToContact() {
+        document.getElementById('contact-page').scrollIntoView();
+    }
+
   render() {
     return (
-        <Layout goToAbout={() => this.goToAbout()} >
+        <Layout goToHome={() => this.goToHome()} goToAbout={() => this.goToAbout()} goToContact={() => this.goToContact()} >
             <div>
                 <Portfolio goToAbout={() => this.goToAbout()} />
             </div>

@@ -1,3 +1,47 @@
-﻿#about-page {
-    padding: 0 0 50px 0;
+﻿
+#about-page {
+    padding: 0 0 150px 0;
 }
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    color: white;
+    background-color: #1f2937;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, .9);
+    border-radius: 14px;
+    padding: 0 0 20px 0;
+}
+
+
+.about-section span a {
+    font-size: 1.3em;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.about-section span:hover {
+    text-decoration: underline;
+}
+
+.about-title {
+    padding: 50px 0 50px 0;
+}
+
+
+
+.info-section p {
+    line-height: 40px;
+    padding: 25px;
+}
+.info-section {
+    padding: 10px 5px 100px 5px;
+    font-size: 1.5em;
+    width: 75%;
+}
+
+
+

@@ -19,7 +19,7 @@ export class Portfolio extends Component {
         return (
             <div>
                 <Home goToAbout={() => this.props.goToAbout()} />
-                {/*<About />*/}
+                <About />
                 <Contact sendEmail={this.sendEmail} />
             </div>
         );

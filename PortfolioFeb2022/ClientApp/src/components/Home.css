@@ -3,7 +3,7 @@
 
 
 #home-page {
-    padding: 0 0 50px 0;
+    padding: 125px 0 100px 0;
 }
 
 .title {
@@ -15,6 +15,7 @@
 
 .title h1, h3 {
     padding: 25px 0 25px 0;
+    color: #4a4a4a;
 }
 
 .title h1{
@@ -38,14 +39,16 @@
 .intro {
     display: flex;
     flex-direction: column;
-    padding: 100px 0 25px 0;
+    padding: 150px 0 100px 0;
     font-size: 2.5em;
     text-align: center;
+    
 }
 
 
 .qualities {
     text-align: center;
+    color: #4a4a4a;
 }
 
 
@@ -56,17 +59,7 @@
 }
 
 
-.center {
-    text-align: center;
-}
 
-.button {
-    background-color: midnightblue;
-    border-radius: 10px;
-    color: white;
-    padding: 4px;
-    cursor: pointer;
-}
 
 .button:hover {
     text-decoration: underline;
