@@ -25,7 +25,7 @@ export default class App extends Component {
     return (
         <Layout goToHome={() => this.goToHome()} goToAbout={() => this.goToAbout()} goToContact={() => this.goToContact()} >
             <div>
-                <Portfolio goToAbout={() => this.goToAbout()} />
+                <Portfolio goToAbout={() => this.goToAbout()} goToContact={() => this.goToContact()} />
             </div>
       </Layout>
     );

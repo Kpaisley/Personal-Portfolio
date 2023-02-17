@@ -18,7 +18,7 @@ export class Portfolio extends Component {
     render() {
         return (
             <div>
-                <Home goToAbout={() => this.props.goToAbout()} />
+                <Home goToAbout={() => this.props.goToAbout()} goToContact={() => this.props.goToContact()} />
                 <About />
                 <Contact sendEmail={this.sendEmail} />
             </div>
