@@ -66,18 +66,12 @@ export class NavMenu extends Component {
               <NavItem>
                 <NavLink className="text-light nav-text" onClick={() => this.props.goToAbout()}>About</NavLink>
               </NavItem>
+               <NavItem>
+                <NavLink className="text-light nav-text" onClick={() => this.props.goToExperience()}>Experience</NavLink>
+              </NavItem>
               <NavItem>
                 <NavLink className="text-light nav-text" onClick={() => this.props.goToContact()}>Contact</NavLink>
               </NavItem>
-              {/*<NavItem>*/}
-              {/*  <NavLink tag={Link} className="text-light nav-text" to="/counter">Counter</NavLink>*/}
-              {/*</NavItem>*/}
-              {/*<NavItem>*/}
-              {/*  <NavLink tag={Link} className="text-light nav-text" to="/fetch-data">Fetch data</NavLink>*/}
-              {/*</NavItem>*/}
-              {/*<NavItem>*/}
-              {/* <NavLink tag={Link} className="text-light nav-text" to="/portfolio">Portfolio!</NavLink>*/}
-              {/*</NavItem>*/}
             </ul>
           </Collapse>
         </Navbar>

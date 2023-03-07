@@ -90,12 +90,10 @@ header {
 }
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 750px) {
 
     #to-top-btn {
-        padding: 7px 20px;
-        font-size: 2em;
-        margin: 0 25px 50px 0;
+        display: none;
     }
 
     

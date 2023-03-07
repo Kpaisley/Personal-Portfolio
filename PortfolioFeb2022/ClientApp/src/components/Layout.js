@@ -11,7 +11,7 @@ export class Layout extends Component {
   render() {
     return (
       <div>
-            <NavMenu goToHome={() => this.props.goToHome()} goToAbout={() => this.props.goToAbout()} goToContact={() => this.props.goToContact()} />
+            <NavMenu goToHome={() => this.props.goToHome()} goToAbout={() => this.props.goToAbout()} goToContact={() => this.props.goToContact()} goToExperience={() => this.props.goToExperience()} />
         <Container tag="main">
           {this.props.children}
         </Container>

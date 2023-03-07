@@ -17,15 +17,20 @@ export default class App extends Component {
         document.getElementById('about-page').scrollIntoView();
     }
 
+    goToExperience() {
+        document.getElementById('experience-page').scrollIntoView();
+    }
+
     goToContact() {
         document.getElementById('contact-page').scrollIntoView();
     }
 
+    
   render() {
     return (
-        <Layout goToHome={() => this.goToHome()} goToAbout={() => this.goToAbout()} goToContact={() => this.goToContact()} >
+        <Layout goToHome={() => this.goToHome()} goToAbout={() => this.goToAbout()} goToContact={() => this.goToContact()} goToExperience={() => this.goToExperience()} >
             <div>
-                <Portfolio goToAbout={() => this.goToAbout()} goToContact={() => this.goToContact()} />
+                <Portfolio goToAbout={() => this.goToAbout()} goToContact={() => this.goToContact()} goToExperience={() => this.goToExperience()} />
             </div>
       </Layout>
     );
