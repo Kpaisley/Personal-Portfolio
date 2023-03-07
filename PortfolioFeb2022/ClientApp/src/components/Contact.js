@@ -71,7 +71,9 @@ export class Contact extends Component {
                         <input type="submit" className="submit" value="Submit"></input>
                         <div id="submit-msg" className="text-light"></div>
                     </form>
-                    
+                </div>
+                <div className='main-footer'>
+                    <h5>Copyright &copy; {new Date().getFullYear()} | Kyle Paisley</h5>
                 </div>
             </div>
         );
