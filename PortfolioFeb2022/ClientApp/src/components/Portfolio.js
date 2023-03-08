@@ -10,18 +10,15 @@ export class Portfolio extends Component {
 
     componentDidMount() {
         window.addEventListener('scroll', () => {
-            const react = document.getElementById('react-features').getBoundingClientRect().top;
-            const angular = document.getElementById('angular-features').getBoundingClientRect().top;
+            const experiencePos = document.getElementById('experience-page').getBoundingClientRect().top;
+            const reactFeatures = document.getElementById('react-features');
+            const angularFeautres = document.getElementById('angular-features');
 
-            if (react <= 0) {
-                document.getElementById('react-features').classList.remove('hidden');
-                document.getElementById('react-features').classList.add('fade-in');
+            if (experiencePos <= 25) {
+                reactFeatures.classList.remove('hidden');
+                angularFeautres.classList.remove('hidden');
             }
 
-            if (angular <= 0) {
-                document.getElementById('angular-features').classList.remove('hidden');
-                document.getElementById('angular-features').classList.add('fade-in');
-            }
         })
     }
 
