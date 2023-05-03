@@ -4,10 +4,26 @@
     padding-bottom: 100px;
 }
 
+
 .experience-box-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+.experience-box-lg {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+    width: 800px;
+    min-height: 925px;
+    background-color: #1f2937;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, .9);
+    border-radius: 14px;
+    color: white;
+    margin: 15px;
 }
 
 .experience-box {
@@ -25,7 +41,7 @@
     margin: 15px;
 }
 
-.experience-box:hover {
+.experience-box:hover, .experience-box-lg:hover {
     box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 1);
 }
 
@@ -38,19 +54,23 @@
 }
 
 
-.experience-box h3 {
+.experience-box h3, .experience-box-lg h3 {
     color: white;
     font-weight: bold;
 }
 
-.experience-box h4 {
+.experience-box h4, .experience-box-lg h4 {
     text-decoration: underline;
 }
 
-.features-list {
+.features-list, .features-list-lg {
     margin-top: 20px;
     text-align: left;
-    
+}
+
+.features-list-lg li {
+    margin: 25px 15px 30px 15px;
+    font-weight: bold;
 }
 
 .features-list li {
@@ -59,12 +79,12 @@
 }
 
 
-.experience-box a {
+.experience-box a, .experience-box-lg a {
     text-decoration: none;
     color: lightgray;
 }
 
-.experience-box a:hover {
+.experience-box a:hover, .experience-box-lg a:hover {
     color: white;
     font-weight: bold;
 }

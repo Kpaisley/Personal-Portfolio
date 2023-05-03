@@ -13,8 +13,7 @@ export class Portfolio extends Component {
             const experiencePos = document.getElementById('experience-page').getBoundingClientRect().top;
             const reactFeatures = document.getElementById('react-features');
             const angularFeautres = document.getElementById('angular-features');
-
-            if (experiencePos <= 25) {
+            if (experiencePos <= -995) {
                 reactFeatures.classList.remove('hidden');
                 angularFeautres.classList.remove('hidden');
             }
