@@ -61,10 +61,10 @@ export class NavMenu extends Component {
                 <Collapse className="d-sm-inline-flex flex-sm-row-reverse" isOpen={!this.state.collapsed} navbar>
             <ul className="navbar-nav flex-grow">
               <NavItem>
-                <NavLink tag={Link} className="text-light nav-text" to="/">Home</NavLink>
+                <NavLink tag={Link} className="text-light nav-text" id="nav-home" to="/">Home</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink className="text-light nav-text" onClick={() => this.props.goToAbout()}>About</NavLink>
+                <NavLink className="text-light nav-text" id="nav-about" onClick={() => this.props.goToAbout()}>About</NavLink>
               </NavItem>
                <NavItem>
                 <NavLink className="text-light nav-text" onClick={() => this.props.goToExperience()}>Experience</NavLink>

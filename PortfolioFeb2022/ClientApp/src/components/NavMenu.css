@@ -41,18 +41,13 @@ header {
     transition: visibility 0s 0.5s, opacity 0.5s linear;
 }
 
-
-
-
-
-
 .nav-text {
     font-size: 1.2em;
     cursor: pointer;
 }
 
 .nav-text:hover {
-    font-size: 1.25em;
+    text-shadow: 1px 1px 2px white;
 }
 
 
