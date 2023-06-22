@@ -1,7 +1,6 @@
 ﻿
 
 
-
 #home-page {
     padding: 125px 0 100px 0;
 }
@@ -10,7 +9,7 @@
     display: flex;
     flex-wrap: wrap;
     padding-top: 25px;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 
 .title h1, h3 {
@@ -27,22 +26,31 @@
 }
 
 .icons {
-    margin: auto 0 auto auto;
-    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
 }
 
-.icons span {
-    padding: 30px;
+.icons span a {
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 35px;
+    margin: 2px 40px 0 40px;
+}
+
+
+.icons span a:hover {
     cursor: pointer;
+    margin-top: 0px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 8px 20px;
 }
 
 .intro {
-    display: flex;
-    flex-direction: column;
     padding: 150px 0 100px 0;
     font-size: 2.5em;
     text-align: center;
-    
 }
 
 
@@ -58,14 +66,6 @@
     text-align: center;
 }
 
-
-
-
-.button:hover {
-    text-decoration: underline;
-    font-weight: bold;
-}
-
 strong {
     font-size: 1.1em;
 }
@@ -78,14 +78,6 @@ strong {
     .title {
         justify-content: center;
         text-align: center;
-    }
-
-    .icons {
-        margin: auto 0 auto 0;
-    }
-
-    .icons span {
-        padding: 8px;
     }
 
     .intro {
