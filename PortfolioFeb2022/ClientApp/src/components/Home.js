@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import { FaLinkedin, FaGithubSquare, FaEnvelope, } from 'react-icons/fa';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import './Home.css';
 
 export class Home extends Component {
@@ -19,7 +17,7 @@ export class Home extends Component {
                     <h1>KYLE PAISLEY</h1>
                     <h3>FULL STACK WEB DEVELOPER</h3>
                 </div>
-                <div className="icons">
+                <div className="icons fade-in">
                     <span><a href="https://www.linkedin.com/in/kyle-w-paisley/" target="_blank"><FaLinkedin size="4em" color="#03034f"  /></a></span>
                     <span><a href="https://github.com/Kpaisley" target="_blank"><FaGithubSquare size="4em" color="#03034f" /></a></span>
                     <span><a onClick={() => this.props.goToContact()}><FaEnvelope size="4em" color="#03034f" /></a></span>
