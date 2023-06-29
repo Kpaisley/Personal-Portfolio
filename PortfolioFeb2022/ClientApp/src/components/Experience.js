@@ -59,7 +59,7 @@ export class Experience extends Component {
                         <div id="angular-features" className="hidden fade-in">
                             <ul className="features-list">
                                 <li>Fully responsive UI that works on all devices</li>
-                                <li>Focued heavily on TypeScript and C#</li>
+                                <li>Focused heavily on TypeScript and C#</li>
                                 <li>Add, remove and change quantity of items in your cart using a local Rest API with in memory data</li>
                                 <li>Built using Angular and ASP .Net Core</li>
                             </ul>

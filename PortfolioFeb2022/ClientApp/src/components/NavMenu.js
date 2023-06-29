@@ -19,7 +19,7 @@ export class NavMenu extends Component {
         //NAVBAR FADE-OUT WHEN SCROLLING DOWN
         window.addEventListener('scroll', () => {
 
-            const homeTop = document.getElementById('home-page').getBoundingClientRect().top;
+            var homeTop = document.getElementById('home-page').getBoundingClientRect().top;
 
             homeTop >= -300
                 ? document.getElementById('navbar').classList.remove('scroll-down-fade')
