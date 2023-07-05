@@ -15,6 +15,7 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, .9);
     border-radius: 14px;
     padding: 0 0 20px 0;
+    margin: auto;
 }
 
 .about-section span {
@@ -30,19 +31,45 @@
     padding: 50px 0 50px 0;
 }
 
-
-
-.info-section p {
-    line-height: 40px;
-    padding: 25px;
-}
 .info-section {
     padding: 10px 5px 100px 5px;
-    font-size: 1.5em;
+    font-size: 1.6em;
     width: 75%;
 }
 
+.info-section p {
+    line-height: 45px;
+    padding: 25px;
+}
 
+.desktop-hidden {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .about-section {
+        width: 95%;
+    }
+
+    .about-title {
+        padding: 25px 0 0 0;
+    }
+
+    .info-section {
+        padding: 5px 0px 25px 0px;
+        width: 90%;
+    }
+
+    .info-section p {
+        padding: 10px;
+        font-size: 0.75em;
+        line-height: 40px;
+    }
+
+    .desktop-hidden { 
+        display: inline;
+    }
+}
 
 
 

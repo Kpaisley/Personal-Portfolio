@@ -5,7 +5,7 @@ export class About extends Component {
 
     componentDidMount() {
 
-        //SLIDE LEFT ANIMATION WHEN USER SCROLLS OVER ABOUT
+        //SLIDE LEFT ANIMATION WHEN USER SCROLLS OVER ABOUT SECTION
         const about = document.getElementById('about');
         const observer = new IntersectionObserver(entries => {   
 
@@ -31,8 +31,9 @@ export class About extends Component {
                             <hr />
                         </div>
                         <div className="info-section">
-                            <p>Highly motivated Full-Stack Developer based in Alberta, Canada. I began working in the trades at a young age and decided to change paths and pursue my passion in programming.</p>
-                            <p>Recent graduate from Robertson College with a 4.0 GPA, I specialize in both frontend & backend web development.</p>
+                            <p>Recently graduated with a 4.0 GPA from Robertson College's Full Stack Web Development program;
+                                I specialize in both front-end & back-end web development.
+                            </p>
                         </div>
                         <span onClick={() => this.props.goToExperience()}>Check out my work!</span>
                     </div>
