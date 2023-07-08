@@ -4,6 +4,26 @@ import './Experience.css';
 export class Experience extends Component {
 
 
+    //THIS BREAKS THE FAFE IN EFFECT ON THE BOTTOM 2 SECTIONS WHEN DROPDOWN IS COLLAPSED.
+    componentDidMount() {
+        const dropdown1 = document.querySelector(".dropdown");
+        const dropdownBtn1 = document.querySelector("#dropdown-btn-1");
+        const features1 = document.querySelector(".dropdown-features");
+
+        //Open and close the dropdown when 
+        dropdownBtn1.addEventListener("click", () => {
+            features1.classList.toggle('hide');
+
+            if (dropdownBtn1.innerHTML === "View More" && !features1.classList.contains('hide')) {
+                dropdownBtn1.innerHTML = "View Less";
+                dropdown1.style.maxHeight = "250vh";
+            } else {
+                dropdownBtn1.innerHTML = "View More";
+                dropdown1.style.maxHeight = "15vh";
+            }
+        });
+    }
+
     render() {
         return (
             <div id="experience-page">
@@ -17,19 +37,27 @@ export class Experience extends Component {
                         <hr />
                         <img className="fw-logo" src="../Business.png" alt="React-Logo" width="100px"></img>
                         <h3>Business Management Demo</h3>
-                        <h4>Features</h4>
-                        
-                        <ul className="features-list-lg">
-                            <li>Full Stack SPA built using ReactJS, ASP .Net Core and SQL Server</li>
-                            <li>Implements secure account creation and user login using Auth0 technology</li>
-                            <li>Connected to a SQL Server database, user's can manage and update their Products, Departments and Employees in real time with the use of effiecient Rest API's</li>
-                            <li>Through strong front-end and back-end validation, a user is only able to access data that is directly associated to their personal account</li>
-                            <li>Custom built relational database in which One to Many relationships are demonstrated between Employees and Departments</li>
-                            <li>Hosted through Microsoft Azure Web Hosting & Azure SQL Server</li>
-                        </ul>
-                        <a className="demo-link" href="https://github.com/Kpaisley/Business-Management" target="_blank">View the Source Code!</a>
+
+
+                        <div className="dropdown">
+                            <div className="dropdown-features hide">
+                                <ul className="features-list-lg">
+                                    <li>Full Stack SPA Demo built using ReactJS, ASP.NET, Entity Framework Core and SQL Server</li>
+                                    <li>Configured and hosted through Azure Cloud</li>
+                                    <li>Implements secure account creation and user login using Auth0 technology coupled with strong client side validation</li>
+                                    <li>Connected to a SQL Server database, user's can manage and update their Products, Departments and Employees in real time with the use of
+                                        Rest API's connected to the back-end
+                                    </li>
+                                    <li>Through strong front-end and back-end validation, a user is only able to access data that is directly associated to their personal account</li>
+                                    <li>Custom built relational database in which One to Many relationships are demonstrated between Employees and Departments</li>
+                                </ul>
+                            </div>
+                            <h5 id="dropdown-btn-1">View More</h5>
+                        </div>
+
+                        <a href="https://businessmanagement.azurewebsites.net/" target="_blank">View the Project!</a>
                         <br />
-                        <a className="demo-link" href="https://businessmanagement.azurewebsites.net/" target="_blank">View the Project!</a>
+                        <a href="https://github.com/Kpaisley/Business-Management" target="_blank">Source Code</a>
                         
                     </div>
 
