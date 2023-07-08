@@ -7,20 +7,6 @@ import { Experience } from './Experience';
 
 export class Portfolio extends Component {
 
-
-    componentDidMount() {
-        window.addEventListener('scroll', () => {
-            const experiencePos = document.getElementById('experience-page').getBoundingClientRect().top;
-            const reactFeatures = document.getElementById('react-features');
-            const angularFeautres = document.getElementById('angular-features');
-            if (experiencePos <= -995) {
-                reactFeatures.classList.remove('hidden');
-                angularFeautres.classList.remove('hidden');
-            }
-
-        })
-    }
-
     
     sendEmail = (event) => {
         event.preventDefault();

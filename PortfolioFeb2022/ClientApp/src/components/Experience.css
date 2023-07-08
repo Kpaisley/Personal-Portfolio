@@ -11,18 +11,25 @@
     justify-content: space-around;
 }
 
-.experience-box-lg {
+.experience-box-lg, .experience-box {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     text-align: center;
     padding: 15px;
-    width: 800px;
     background-color: #1f2937;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, .9);
     border-radius: 14px;
     color: white;
     margin: 15px;
+}
+
+.experience-box-lg {
+    width: 800px;
+}
+
+.experience-box {
+    width: 450px;
 }
 
 .dropdown {
@@ -37,17 +44,17 @@
     transition: 2.5s;
 }
 
-#dropdown-btn-1 {
+.dropdown-btn {
     border: 2px solid #2A384B;
     display: inline-block;
     padding: 5px 8px;
-    margin: 30px 0 50px;
+    margin: 30px auto 50px;
     border-radius: 20px;
     cursor: pointer;
     transition: 0.4s;
 }
 
-#dropdown-btn-1:hover {
+.dropdown-btn:hover {
     background-color: #2A384B;
 }
 
@@ -55,21 +62,6 @@
     max-height: 0vh;
     opacity: 0;
     transition: 0.3s;
-}
-
-.experience-box {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    text-align: center;
-    padding: 15px;
-    width: 450px;
-    min-height: 720px;
-    background-color: #1f2937;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, .9);
-    border-radius: 14px;
-    color: white;
-    margin: 15px;
 }
 
 .experience-box:hover, .experience-box-lg:hover {

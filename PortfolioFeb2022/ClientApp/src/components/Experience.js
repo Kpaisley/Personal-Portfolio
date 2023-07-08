@@ -4,7 +4,6 @@ import './Experience.css';
 export class Experience extends Component {
 
 
-    //THIS BREAKS THE FAFE IN EFFECT ON THE BOTTOM 2 SECTIONS WHEN DROPDOWN IS COLLAPSED.
     componentDidMount() {
         const dropdown1 = document.querySelector(".dropdown");
         const dropdownBtn1 = document.querySelector("#dropdown-btn-1");
@@ -52,7 +51,7 @@ export class Experience extends Component {
                                     <li>Custom built relational database in which One to Many relationships are demonstrated between Employees and Departments</li>
                                 </ul>
                             </div>
-                            <h5 id="dropdown-btn-1">View More</h5>
+                            <h5 id="dropdown-btn-1" className="dropdown-btn">View More</h5>
                         </div>
 
                         <a href="https://businessmanagement.azurewebsites.net/" target="_blank">View the Project!</a>
@@ -68,7 +67,7 @@ export class Experience extends Component {
                         <img className="fw-logo" src="../react.svg" alt="React-Logo" width="100px"></img>
                         <h3>Shopping Cart Demo</h3>
                         <h4>Features</h4>
-                        <div id="react-features" className="hidden fade-in">
+                        <div id="react-features">
                             <ul className="features-list">
                                 <li>Fully responsive UI that works on all devices</li>
                                 <li>Focused heavily on JavaScript and C#</li>
@@ -84,7 +83,7 @@ export class Experience extends Component {
                         <img id="angular-logo" className="fw-logo" src="../angular.svg" alt="Angluar-Logo" width="100px"></img>
                         <h3>Shopping Cart Demo</h3>
                         <h4>Features</h4>
-                        <div id="angular-features" className="hidden fade-in">
+                        <div id="angular-features">
                             <ul className="features-list">
                                 <li>Fully responsive UI that works on all devices</li>
                                 <li>Focused heavily on TypeScript and C#</li>
