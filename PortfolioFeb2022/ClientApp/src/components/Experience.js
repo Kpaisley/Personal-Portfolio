@@ -5,22 +5,56 @@ export class Experience extends Component {
 
 
     componentDidMount() {
-        const dropdown1 = document.querySelector(".dropdown");
-        const dropdownBtn1 = document.querySelector("#dropdown-btn-1");
-        const features1 = document.querySelector(".dropdown-features");
+        const bmDropdown = document.querySelector(".bm-dropdown");
+        const bmDropdownBtn = document.querySelector("#bm-dropdown-btn");
+        const bmFeatures = document.querySelector(".bm-dropdown-features");
 
-        //Open and close the dropdown when 
-        dropdownBtn1.addEventListener("click", () => {
-            features1.classList.toggle('hide');
+        const reactDropdownBtn = document.querySelector("#react-dropdown-btn");
+        const reactFeatures = document.querySelector(".react-dropdown-features");
 
-            if (dropdownBtn1.innerHTML === "View More" && !features1.classList.contains('hide')) {
-                dropdownBtn1.innerHTML = "View Less";
-                dropdown1.style.maxHeight = "250vh";
+        const angularDropdownBtn = document.querySelector("#angular-dropdown-btn");
+        const angularFeatures = document.querySelector(".angular-dropdown-features");
+
+
+        //Open and close Business Management dropdown
+        bmDropdownBtn.addEventListener("click", () => {
+            bmFeatures.classList.toggle('hide');
+
+            if (bmDropdownBtn.innerHTML === "View More" && !bmFeatures.classList.contains('hide')) {
+                bmDropdownBtn.innerHTML = "View Less";
+                bmDropdown.style.maxHeight = "250vh";
             } else {
-                dropdownBtn1.innerHTML = "View More";
-                dropdown1.style.maxHeight = "15vh";
+                bmDropdownBtn.innerHTML = "View More";
+                bmDropdown.style.maxHeight = "15vh";
             }
         });
+
+        //Open and close React Shopping Cart dropdown
+        reactDropdownBtn.addEventListener("click", () => {
+
+            reactFeatures.classList.toggle('hidden');
+            if (reactDropdownBtn.innerHTML === "View More" && !reactFeatures.classList.contains('hide')) {
+                reactDropdownBtn.innerHTML = "View Less";
+            } else {
+                reactDropdownBtn.innerHTML = "View More";
+            }
+            
+        });
+
+        //Open and close Angular Shopping Cart dropdown
+        angularDropdownBtn.addEventListener("click", () => {
+
+            angularFeatures.classList.toggle('hidden');
+            if (angularDropdownBtn.innerHTML === "View More" && !angularFeatures.classList.contains('hide')) {
+                angularDropdownBtn.innerHTML = "View Less";
+            } else {
+                angularDropdownBtn.innerHTML = "View More";
+            }
+        });
+
+        
+
+
     }
 
     render() {
@@ -38,8 +72,8 @@ export class Experience extends Component {
                         <h3>Business Management Demo</h3>
 
 
-                        <div className="dropdown">
-                            <div className="dropdown-features hide">
+                        <div className="bm-dropdown">
+                            <div className="bm-dropdown-features hide">
                                 <ul className="features-list-lg">
                                     <li>Full Stack SPA Demo built using ReactJS, ASP.NET, Entity Framework Core and SQL Server</li>
                                     <li>Configured and hosted through Azure Cloud</li>
@@ -51,7 +85,7 @@ export class Experience extends Component {
                                     <li>Custom built relational database in which One to Many relationships are demonstrated between Employees and Departments</li>
                                 </ul>
                             </div>
-                            <h5 id="dropdown-btn-1" className="dropdown-btn">View More</h5>
+                            <h5 id="bm-dropdown-btn" className="dropdown-btn">View More</h5>
                         </div>
 
                         <a href="https://businessmanagement.azurewebsites.net/" target="_blank">View the Project!</a>
@@ -61,37 +95,52 @@ export class Experience extends Component {
                     </div>
 
 
-                    <div className="experience-box">
+                    <div className="react-experience-box">
                         <h2>ReactJS</h2>
                         <hr />
                         <img className="fw-logo" src="../react.svg" alt="React-Logo" width="100px"></img>
                         <h3>Shopping Cart Demo</h3>
-                        <h4>Features</h4>
-                        <div id="react-features">
-                            <ul className="features-list">
-                                <li>Fully responsive UI that works on all devices</li>
-                                <li>Focused heavily on JavaScript and C#</li>
-                                <li>Add, remove and change quantity of items in your cart using a local Rest API with in memory data</li>
-                                <li>Built using ReactJS and ASP .Net Core</li>
-                            </ul>
-                            <a className="demo-link" href="https://github.com/Kpaisley/Shopping-Cart-React" target="_blank">View the Project!</a>
+
+                        <div className="react-dropdown">
+                            <div className="react-dropdown-features hidden">
+                                <ul className="features-list">
+                                    <li>Fully responsive UI that works on all devices</li>
+                                    <li>Focused heavily on JavaScript and C#</li>
+                                    <li>Add, remove and change quantity of items in your cart using a local Rest API with in memory data</li>
+                                    <li>Built using ReactJS and ASP .Net Core</li>
+                                </ul>
+                            </div>
+                           
                         </div>
+                        <h5 id="react-dropdown-btn" className="dropdown-btn">View More</h5>
+                        <a className="demo-link" href="https://github.com/Kpaisley/Shopping-Cart-React" target="_blank">View the Project!</a>
                     </div>
-                    <div className="experience-box">
+
+
+
+
+
+
+
+                    <div className="angular-experience-box">
                         <h2>Angular</h2>
                         <hr />
                         <img id="angular-logo" className="fw-logo" src="../angular.svg" alt="Angluar-Logo" width="100px"></img>
                         <h3>Shopping Cart Demo</h3>
-                        <h4>Features</h4>
-                        <div id="angular-features">
-                            <ul className="features-list">
-                                <li>Fully responsive UI that works on all devices</li>
-                                <li>Focused heavily on TypeScript and C#</li>
-                                <li>Add, remove and change quantity of items in your cart using a local Rest API with in memory data</li>
-                                <li>Built using Angular and ASP .Net Core</li>
-                            </ul>
-                            <a className="demo-link" href="https://github.com/Kpaisley/Shopping-Cart-Angular" target="_blank">View the Project!</a>    
+
+                        <div className="angular-dropdown">
+                            <div className="angular-dropdown-features hidden">
+                                <ul className="features-list">
+                                    <li>Fully responsive UI that works on all devices</li>
+                                    <li>Focused heavily on TypeScript and C#</li>
+                                    <li>Add, remove and change quantity of items in your cart using a local Rest API with in memory data</li>
+                                    <li>Built using Angular and ASP .Net Core</li>
+                                </ul>
+                            </div>
+                               
                         </div>
+                        <h5 id="angular-dropdown-btn" className="dropdown-btn">View More</h5>
+                        <a className="demo-link" href="https://github.com/Kpaisley/Shopping-Cart-Angular" target="_blank">View the Project!</a> 
                     </div>
                 </div>
                 <div className="experience-bottom">

@@ -44,6 +44,35 @@ body {
     }
 }
 
+@-moz-keyframes slide-left {
+    0% {
+        left: 150%
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+@-webkit-keyframes slide-left {
+    0% {
+        left: 150%
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+@-o-keyframes slide-left {
+    0% {
+        left: 150%
+    }
+
+    100% {
+        left: 0;
+    }
+}
 
 .fade-in {
     animation: fadeIn 5s;
@@ -91,7 +120,6 @@ body {
         opacity: 1;
     }
 }
-
 
 
 

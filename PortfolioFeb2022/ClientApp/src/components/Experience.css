@@ -11,7 +11,7 @@
     justify-content: space-around;
 }
 
-.experience-box-lg, .experience-box {
+.experience-box-lg, .angular-experience-box, .react-experience-box {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -28,20 +28,25 @@
     width: 800px;
 }
 
-.experience-box {
-    width: 450px;
-}
-
-.dropdown {
+.bm-dropdown {
     max-height: 15vh;
     transition: 0.3s;
 }
 
-.dropdown-features {
+.bm-dropdown-features {
     overflow: hidden;
     max-height: 250vh;
     opacity: 100%;
-    transition: 2.5s;
+    transition: 1s;
+}
+
+.react-experience-box, .angular-experience-box {
+    width: 450px;
+    height: 50%;
+}
+
+.react-dropdown-features, .angular-dropdown-features {
+    transition: 1s;
 }
 
 .dropdown-btn {
@@ -58,14 +63,41 @@
     background-color: #2A384B;
 }
 
-.hide {
-    max-height: 0vh;
-    opacity: 0;
-    transition: 0.3s;
+#dropdown-btn-2, #dropdown-btn-3 {
+    margin-top: 0;
 }
 
-.experience-box:hover, .experience-box-lg:hover {
+.hide {
+    height: 0%;
+    max-height: 0%;
+    opacity: 0%;
+}
+
+.hidden {
+    height: 0vh;
+    overflow: hidden;
+    opacity: 0%;
+}
+
+.react-experience-box:hover, .angular-experience-box:hover, .experience-box-lg:hover {
     box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 1);
+}
+
+.react-experience-box h3, .angular-experience-box h3, .experience-box-lg h3 {
+    color: white;
+    font-weight: bold;
+}
+
+.react-experience-box a, .angular-experience-box a, .experience-box-lg a {
+    text-decoration: none;
+    color: lightgray;
+    font-size: 18px;
+    transition: .3s;
+}
+
+.react-experience-box a:hover, .angular-experience-box a:hover, .experience-box-lg a:hover {
+    color: white;
+    font-weight: bold;
 }
 
 .fw-logo {
@@ -74,16 +106,6 @@
 
 #angular-logo {
     margin-top: 25px;
-}
-
-
-.experience-box h3, .experience-box-lg h3 {
-    color: white;
-    font-weight: bold;
-}
-
-.experience-box h4 {
-    text-decoration: underline;
 }
 
 .features-list, .features-list-lg {
@@ -102,21 +124,7 @@
 }
 
 
-.experience-box a, .experience-box-lg a {
-    text-decoration: none;
-    color: lightgray;
-    font-size: 18px;
-    transition: .3s;
-}
 
-.experience-box a:hover, .experience-box-lg a:hover {
-    color: white;
-    font-weight: bold;
-}
-
-.hidden {
-    display: none;
-}
 
 .experience-bottom {
     display: flex;
