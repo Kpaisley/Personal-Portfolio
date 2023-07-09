@@ -54,15 +54,15 @@ export class Contact extends Component {
                         <input type="hidden" name="subject" value="New Personal Portfolio Submission"></input>
                         <label className="label" htmlFor="name">
                             Name:
-                            <input type="text" name="name" className="input" required></input>
+                            <input type="text" id="name" name="name" className="input" required></input>
                         </label>
                         <label className="label" htmlFor="company">
                             Company Name: <em>(optional)</em>
-                            <input type="text" name="company" className="input"></input>
+                            <input type="text" id="company" name="company" className="input"></input>
                         </label>
                         <label className="label" htmlFor="email">
                             Email:
-                            <input type="email" name="email" className="input"></input>
+                            <input type="email" id="email" name="email" className="input"></input>
                         </label>
                         <label className="label">
                             Message:
