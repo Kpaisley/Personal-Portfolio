@@ -5,6 +5,8 @@ export class Experience extends Component {
 
 
     componentDidMount() {
+        
+
         const bmDropdown = document.querySelector(".bm-dropdown");
         const bmDropdownBtn = document.querySelector("#bm-dropdown-btn");
         const bmFeatures = document.querySelector(".bm-dropdown-features");
@@ -14,6 +16,29 @@ export class Experience extends Component {
 
         const angularDropdownBtn = document.querySelector("#angular-dropdown-btn");
         const angularFeatures = document.querySelector(".angular-dropdown-features");
+
+
+
+        
+
+        //SLIDE RIGHT ANIMATION WHEN USER SCROLLS OVER Internship Section
+        const internSection = document.querySelector('.experience-top');
+        const observer = new IntersectionObserver(entries => {
+
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    internSection.classList.add('slide-right');
+                    internSection.style.right = "0";
+                }
+            });
+        });
+
+        observer.observe(document.querySelector("#experience-page"));
+
+        
+
+
+
 
 
         //Open and close Business Management dropdown
@@ -61,9 +86,8 @@ export class Experience extends Component {
         return (
             <div id="experience-page">
 
-
                 <div className="experience-top">
-                    <div>
+                    <div className="intern-title">
                         <h1>Internships</h1>
                         <hr />
                     </div>
@@ -77,8 +101,6 @@ export class Experience extends Component {
                     <br />
                     <p> <a className="demo-link" href="https://cisi.tech/" target="_blank">View the Project!</a></p>
                 </div>
-
-
 
                 <div className="experience-box-section">
 

@@ -64,6 +64,53 @@ body {
     }
 }
 
+.slide-right {
+    position: relative;
+    animation: slide-right 1.5s;
+}
+
+@keyframes slide-right {
+    0% {
+        right: 150%
+    }
+
+    100% {
+        right: 0;
+    }
+}
+
+@-moz-keyframes slide-right {
+    0% {
+        right: 150%
+    }
+
+    100% {
+        right: 0;
+    }
+}
+
+@-webkit-keyframes slide-right {
+    0% {
+        right: 150%
+    }
+
+    100% {
+        right: 0;
+    }
+}
+
+@-o-keyframes slide-right {
+    0% {
+        right: 150%
+    }
+
+    100% {
+        right: 0;
+    }
+}
+
+
+
 @-o-keyframes slide-left {
     0% {
         left: 150%
