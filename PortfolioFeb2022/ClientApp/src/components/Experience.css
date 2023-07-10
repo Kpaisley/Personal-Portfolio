@@ -1,7 +1,51 @@
 ﻿
 #experience-page {
-    margin: 50px;
-    padding-bottom: 100px;
+    margin: auto;
+    padding-bottom: 50px;
+    width: 100%;
+}
+
+.experience-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    margin: 100px 0 75px 0;
+    background-color: #1f2937;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, .9);
+    border-radius: 14px;
+    color: white;
+}
+
+.experience-top:hover {
+    box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 1);
+}
+
+.experience-top hr {
+}
+
+.experience-top h3 {
+    color: white;
+    text-align: center;
+}
+
+.experience-top p {    
+    color: #9ca3a4;
+    text-align: center;
+    margin: 10px 15px 10px 15px;
+    font-size: 1.2em;
+    line-height: 35px;
+}
+
+.experience-top a {
+    text-decoration: none;
+    color: #9ca3a4;
+}
+
+.experience-top a:hover {
+    font-weight: bold;
+    color: white;
 }
 
 
@@ -9,6 +53,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+.experience-box-section li { 
+    color: #9ca3a4;
 }
 
 .experience-box-lg, .angular-experience-box, .react-experience-box {
@@ -21,7 +69,7 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, .9);
     border-radius: 14px;
     color: white;
-    margin: 15px;
+    margin: 30px;
 }
 
 .experience-box-lg {
@@ -123,41 +171,7 @@
     font-weight: bold;
 }
 
-.experience-bottom {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 15px;
-    margin: 75px 0 0 0;
-    background-color: #1f2937;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, .9);
-    border-radius: 14px;
-    color: white;
-}
 
-.experience-bottom:hover {
-    box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 1);
-}
-
-.experience-bottom h2 {
-    text-decoration: underline;
-}
-
-.experience-bottom p {
-    text-align: center;
-    margin: 10px 15px 10px 15px;
-    font-size: 1.3em;
-}
-
-.experience-bottom a {
-    text-decoration: none;
-    color: lightgray;
-}
-
-.experience-bottom a:hover {
-    font-weight: bold;
-    color: white;
-}
 
 
 

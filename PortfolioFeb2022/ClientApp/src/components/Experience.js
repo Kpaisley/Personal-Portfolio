@@ -62,6 +62,24 @@ export class Experience extends Component {
             <div id="experience-page">
 
 
+                <div className="experience-top">
+                    <div>
+                        <h1>Internships</h1>
+                        <hr />
+                    </div>
+                    <h3>STEM Montessori Academy of Canada</h3>
+                    <p>
+                        During my internship with STEM Canada, I collaborated with a dedicated team to build and design the website for the Canadian
+                        Institute of STEM innovation, gaining valuable hands-on experience in web development and design.
+                    </p>
+
+                    <br />
+                    <br />
+                    <p> <a className="demo-link" href="https://cisi.tech/" target="_blank">View the Project!</a></p>
+                </div>
+
+
+
                 <div className="experience-box-section">
 
 
@@ -143,16 +161,7 @@ export class Experience extends Component {
                         <a className="demo-link" href="https://github.com/Kpaisley/Shopping-Cart-Angular" target="_blank">View the Project!</a> 
                     </div>
                 </div>
-                <div className="experience-bottom">
-                    <h2>Internships</h2>
-                    <p>I was fortunate enough to recieve an internship with STEM Montessori Academy of Canada.</p>
-                    <br />
-                    <p>During this time I was assigned to help build and design STEM Canada's new website for their operations in the United States. Participating in daily discussions and decisions regarding improving the
-                        overall design, I was able to effectively communicate between other members working on the project through a remote workspace. </p>
-                    <br />
-                    <br />
-                    <p> <a className="demo-link" href="https://stemamerica.tech/" target="_blank">View the Project!</a></p>
-                </div>
+                
             </div>
         );
     }
