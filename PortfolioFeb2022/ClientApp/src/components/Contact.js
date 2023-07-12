@@ -45,7 +45,7 @@ export class Contact extends Component {
 
     render() {
         return (
-            <div id="contact-page" className="form-bg">
+            <div id="contact-page">
                 <div className="contact-form">
                     <h2>Contact Me</h2>
                     <h5>Fill out the form below to send me a message</h5>

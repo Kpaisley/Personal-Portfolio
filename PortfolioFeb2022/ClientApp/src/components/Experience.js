@@ -21,7 +21,7 @@ export class Experience extends Component {
 
         
 
-        //SLIDE RIGHT ANIMATION WHEN USER SCROLLS OVER Internship Section
+        //SLIDE RIGHT ANIMATION WHEN USER SCROLLS OVER Experience Section
         const internSection = document.querySelector('.experience-top');
         const observer = new IntersectionObserver(entries => {
 
@@ -94,7 +94,7 @@ export class Experience extends Component {
                     <h3>STEM Montessori Academy of Canada</h3>
                     <p>
                         During my internship with STEM Canada, I collaborated with a dedicated team to build and design the website for the Canadian
-                        Institute of STEM innovation, gaining valuable hands-on experience in web development and design.
+                        Institute of STEM Innovation, gaining valuable hands-on experience in web development and design.
                     </p>
 
                     <br />
@@ -110,8 +110,6 @@ export class Experience extends Component {
                         <hr />
                         <img className="fw-logo" src="../Business.png" alt="React-Logo" width="100px"></img>
                         <h3>Business Management Demo</h3>
-
-
                         <div className="bm-dropdown">
                             <div className="bm-dropdown-features hide">
                                 <ul className="features-list-lg">
@@ -131,10 +129,10 @@ export class Experience extends Component {
                         <a href="https://businessmanagement.azurewebsites.net/" target="_blank">View the Project!</a>
                         <br />
                         <a href="https://github.com/Kpaisley/Business-Management" target="_blank">Source Code</a>
+                    </div>
+                    <div>
                         
                     </div>
-
-
                     <div className="react-experience-box">
                         <h2>ReactJS</h2>
                         <hr />

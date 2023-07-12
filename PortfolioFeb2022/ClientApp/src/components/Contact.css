@@ -1,19 +1,10 @@
 ﻿
-.form-bg {
-    position: absolute;
-    left: 0;
-    background-color: #111827;
-    height: auto;
-    width: 100%;
+#contact-page {
     display: flex;
     align-items: center;
-    justify-content: center;
+    flex-direction: column;
     padding-top: 50px;
-    z-index: 5;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, .9);
-    flex-wrap: wrap;
 }
-
 
 .contact-form {
     background-color: #1f2937;
@@ -21,6 +12,10 @@
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, .9);
+    max-width: 500px;
+    margin-right: 20px;
+    margin-left: 20px;
+    
 }
 
 .contact-form h2 {
@@ -83,16 +78,16 @@
 }
 
 .submit {
-    border: none;
-    border-radius: 5px;
+    border: 2px solid #2A384B;
+    border-radius: 20px;
     font-size: 20px;
-    color: #111827;
-    background-color: white;
-    
+    color: white;
+    background-color: #1f2937;
+    padding: 5px 8px 5px 8px;
 }
 
 .submit:hover {
-    background-color: lightgray;
+    background-color: #2A384B;
 }
 
 #submit-msg {
@@ -110,9 +105,9 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    border-top: 2px solid white;
+    border-top: 2px solid #2A384B;
     margin-top: 50px;
-    padding-left: 15px;
+    padding: 10px 15px 15px 15px;
     color: white;
     min-height: 50px;
 }
