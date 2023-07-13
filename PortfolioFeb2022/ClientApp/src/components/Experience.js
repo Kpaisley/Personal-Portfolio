@@ -87,19 +87,17 @@ export class Experience extends Component {
             <div id="experience-page">
 
                 <div className="experience-top">
-                    <div className="intern-title">
+                    <div>
                         <h1>Internships</h1>
                         <hr />
                     </div>
                     <h3>STEM Montessori Academy of Canada</h3>
-                    <p>
+                    <p className="intern-desc">
                         During my internship with STEM Canada, I collaborated with a dedicated team to build and design the website for the Canadian
                         Institute of STEM Innovation, gaining valuable hands-on experience in web development and design.
                     </p>
 
-                    <br />
-                    <br />
-                    <p> <a className="demo-link" href="https://cisi.tech/" target="_blank">View the Project!</a></p>
+                    <p> <a className="demo-link" href="https://cisi.tech/" rel="noreferrer" target="_blank">View the Project!</a></p>
                 </div>
 
                 <div className="experience-box-section">
@@ -126,9 +124,9 @@ export class Experience extends Component {
                             <h5 id="bm-dropdown-btn" className="dropdown-btn">View More</h5>
                         </div>
 
-                        <a href="https://businessmanagement.azurewebsites.net/" target="_blank">View the Project!</a>
+                        <a href="https://businessmanagement.azurewebsites.net/" rel="noreferrer" target="_blank">View the Project!</a>
                         <br />
-                        <a href="https://github.com/Kpaisley/Business-Management" target="_blank">Source Code</a>
+                        <a href="https://github.com/Kpaisley/Business-Management" rel="noreferrer" target="_blank">Source Code</a>
                     </div>
                     <div>
                         
@@ -151,14 +149,8 @@ export class Experience extends Component {
                            
                         </div>
                         <h5 id="react-dropdown-btn" className="dropdown-btn">View More</h5>
-                        <a className="demo-link" href="https://github.com/Kpaisley/Shopping-Cart-React" target="_blank">View the Project!</a>
+                        <a className="demo-link" href="https://github.com/Kpaisley/Shopping-Cart-React" rel="noreferrer" target="_blank">View the Project!</a>
                     </div>
-
-
-
-
-
-
 
                     <div className="angular-experience-box">
                         <h2>Angular</h2>
@@ -178,10 +170,9 @@ export class Experience extends Component {
                                
                         </div>
                         <h5 id="angular-dropdown-btn" className="dropdown-btn">View More</h5>
-                        <a className="demo-link" href="https://github.com/Kpaisley/Shopping-Cart-Angular" target="_blank">View the Project!</a> 
+                        <a className="demo-link" href="https://github.com/Kpaisley/Shopping-Cart-Angular" rel="noreferrer" target="_blank">View the Project!</a> 
                     </div>
                 </div>
-                
             </div>
         );
     }

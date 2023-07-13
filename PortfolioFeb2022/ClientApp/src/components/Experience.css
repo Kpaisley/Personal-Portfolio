@@ -22,6 +22,10 @@
     color: white;
 }
 
+.intern-desc {
+    padding-bottom: 75px;
+}
+
 .experience-top:hover {
     box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 1);
 }

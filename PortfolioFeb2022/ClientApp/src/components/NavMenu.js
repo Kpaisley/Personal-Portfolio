@@ -56,7 +56,7 @@ export class NavMenu extends Component {
         <div>
         <header id="navbar">
         <Navbar className="navbar-expand-sm navbar-toggleable-sm ng-white box-shadow mb-3" container dark>
-          <NavbarBrand tag={Link} to="/"><img src="../Kp-Icon-White.png" height='100px'></img></NavbarBrand>
+          <NavbarBrand tag={Link} to="/"><img src="../Kp-Icon-White.png" alt="KP-Logo" height='100px'></img></NavbarBrand>
           <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
                 <Collapse className="d-sm-inline-flex flex-sm-row-reverse" isOpen={!this.state.collapsed} navbar>
             <ul className="navbar-nav flex-grow">
