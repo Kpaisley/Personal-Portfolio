@@ -1,8 +1,9 @@
 ﻿
 
 #home-page {
-    padding: 125px 10% 25px 10%;
-    background-color: rgb(252, 252, 252)
+    padding: 125px 5% 25px 5%;
+    background-color: rgb(252, 252, 252);
+    border-radius:0 10px 10px;
 }
 
 .title {

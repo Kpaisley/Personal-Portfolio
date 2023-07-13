@@ -12,7 +12,7 @@ export class Layout extends Component {
     return (
         <div>
             <NavMenu goToHome={() => this.props.goToHome()} goToAbout={() => this.props.goToAbout()} goToContact={() => this.props.goToContact()} goToExperience={() => this.props.goToExperience()} />
-            <Container className="main-container" tag="main">
+            <Container  tag="main">
                 {this.props.children}
             </Container>
         </div>
