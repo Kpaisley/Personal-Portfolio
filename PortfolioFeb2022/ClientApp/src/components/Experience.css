@@ -1,7 +1,4 @@
-﻿
-
-
-#experience-page {
+﻿#experience-page {
     margin: auto;
     padding: 25px 10px 50px 10px;
     width: 100%;
@@ -63,51 +60,34 @@
     color: #9ca3a4;
 }
 
-.experience-box-lg, .angular-experience-box, .react-experience-box {
+.experience-box-lg {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
+    width: 80vw;
     text-align: center;
     padding: 15px;
     background-color: #1f2937;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, .9);
     border-radius: 14px;
     color: white;
-    margin: 15px 15px 50px 15px;
+    margin: 15px auto 50px auto;
+    scroll-margin-top: 30px; /*Scrolls 30px above when scrollIntoView() is used.*/
 }
 
 .experience-box-lg {
-    width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+    color: white;
+    font-weight: bold;
 }
 
-.bm-dropdown {
-    max-height: 15vh;
-    transition: 0.3s;
-}
-
-.bm-dropdown-features {
-    overflow: hidden;
-    max-height: 250vh;
-    opacity: 100%;
-    transition: 1s;
-}
-
-.react-experience-box, .angular-experience-box {
-    width: 450px;
-    height: 50%;
-}
-
-.react-dropdown-features, .angular-dropdown-features {
-    transition: 1s;
+.experience-box-lg h3 {
+    color: white;
+    font-weight: bold;
 }
 
 .dropdown-btn {
     border: 2px solid #2A384B;
-    display: inline-block;
+    margin: 50px auto 75px;
     padding: 5px 8px;
-    margin: 30px auto 50px;
     border-radius: 20px;
     cursor: pointer;
     transition: 0.4s;
@@ -117,41 +97,52 @@
     background-color: #2A384B;
 }
 
-#dropdown-btn-2, #dropdown-btn-3 {
-    margin-top: 0;
-}
-
-.hide {
-    height: 0%;
-    max-height: 0%;
-    opacity: 0%;
-}
-
-.hidden {
-    height: 0vh;
+.dropdown {
+    text-align: left;
+    max-height: 1000vh;
     overflow: hidden;
-    opacity: 0%;
+    transition: 1.3s;
 }
 
-.react-experience-box:hover, .angular-experience-box:hover, .experience-box-lg:hover {
-    box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 1);
-}
-
-.react-experience-box h3, .angular-experience-box h3, .experience-box-lg h3 {
-    color: white;
+.features-list li {
+    margin: 30px 20px;
     font-weight: bold;
 }
 
-.react-experience-box a, .angular-experience-box a, .experience-box-lg a {
+.hide {
+    max-height: 0;
+    opacity: 0;
+    transition: .3s;
+}
+
+.proj-link {
     text-decoration: none;
     color: lightgray;
     font-size: 18px;
     transition: .3s;
+    margin: 10px auto 10px auto;
+    width: fit-content;
 }
 
-.react-experience-box a:hover, .angular-experience-box a:hover, .experience-box-lg a:hover {
+.proj-link:hover {
     color: white;
     font-weight: bold;
+}
+
+.experience-box-sm {
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    width: 80vw;
+    margin: 15px 15px 50px 15px;
+    color: white;
+    padding: 15px;
+    background-color: #1f2937;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, .9);
+    border-radius: 14px;
+    text-align: center;
+    height: 100%;
+    scroll-margin-top: 30px; /*Scrolls 30px above when scrollIntoView() is used.*/
 }
 
 .fw-logo {
@@ -162,33 +153,10 @@
     margin-top: 25px;
 }
 
-.features-list, .features-list-lg {
-    margin-top: 20px;
-    text-align: left;
-}
-
-.features-list-lg li {
-    margin: 25px 15px 30px 15px;
-    font-weight: bold;
-}
-
-.features-list li {
-    margin: 25px 0 30px 0;
-    font-weight: bold;
-}
-
-
 
 @media (max-width: 767px) {
     .experience-top {
         width: 100%;
     }
+
 }
-
-
-
-
-
-
-
-
